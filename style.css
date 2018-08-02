@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a.join-cta {
+    padding: 20px 40px;
+    background-color: rgba(18, 185, 26, .7);
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.5rem;
+    transform: rotate(-1deg);
+    transition: all .3s ease;
+}
+
+a.join-cta:hover {
+    background-color: rgb(18, 185, 26); 
+    transform: scale(1.2) rotate(-1deg);   
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what, .who {
+    width: 40%;
+}
+
+.what h2, .who h2 {
+    margin: 0 auto;
+    background-color: rgba(18, 185, 26, 1); 
+    transform: rotate(-1deg);
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;    
+}
+
+header {
+    padding: 100px 0;
+    background-image: url(img/dark_backdrop.jpg);
+    filter: blur(0px);
+    color: #fff;    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+header p {
+    text-align: center;
+    margin: 40px 0;
+}
+header .jdc {
+    position: absolute;
+    right: 10px; 
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+header .jdc img {
+    width: 100%;
+    height: auto;
+}
+header .logo {
+    display: flex;
+    align-items: baseline;
+}
+
+
+header .logo span {
+    padding-bottom: 20px;
+    margin-top: -20px; 
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+}
+header h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: .2rem;
+}
