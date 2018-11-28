@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    font-family: 'Helvetica', sans-serif;    
+    font-family: 'Source Sans Pro', sans-serif;    
 }
 
 * {
@@ -131,7 +131,7 @@ section .container {
 }
 
 .course-item {
-  font-family: 'Source Sans Pro', sans-serif;   
+  /* font-family: 'Black Han Sans', sans-serif;    */
 }
 
 .course-item .title {
@@ -155,11 +155,39 @@ section .container {
   width: 100%;
 }
 .course-item .content .image {
-  flex: 1;
+  flex: 3;
+  width: 100%;
+}
+
+.course-item .content .description h4 {
+  font-family: 'Source Sans Pro', sans-serif;  
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 0;
+  margin: 0;
 }
 .course-item .content .description {
-  padding-left: 2rem;
-  flex: 3;
+  padding: 1rem 2rem;
+  height: 100%;
+  flex: 5;
+  position: relative;
+  color: #fff;
+  letter-spacing: .2px;
+  line-height: 1.2rem;
+  margin: 2rem;  
+  z-index: 1;
+  transform: rotate(-1deg);
+  background-color: green;
+  box-shadow: 1px 1px 32px 8px rgba(0,0,0,0.1), -1px -1px 32px 8px rgba(0,0,0,0.1);
+}
+
+.course-item .content .description p {
+  z-index: 2;
+  position: relative;
+}
+
+.course-item:nth-child(even) .content .description {
+  transform: rotate(1deg);
 }
 
 .course-item .content .image img {
@@ -261,7 +289,7 @@ footer .container {
   }
 
   .course-item .content .description {
-    padding: .5rem 0;
+    margin: 0;
   }
 
   .about h3, .course h3, .ready h3 {
@@ -293,5 +321,17 @@ footer .container {
     font-size: 1rem;
   }
 
+  .course-item .content {
+    flex-direction: column;
+  }
+
+  .course-item .content .description {
+    margin: 1rem 0 0 0;
+  }
+
+  .about .container , .course .container, .ready .container {
+    width: 100%;
+    flex-direction: column;
+  }
 
 }
