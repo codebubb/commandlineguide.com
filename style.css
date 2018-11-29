@@ -9,6 +9,10 @@ body, html {
     box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 h3 {
   margin: 0;
 }
@@ -88,23 +92,6 @@ header h2 {
   color: #fff;
   padding: .6rem;    
 }
-.who {
-  display: flex;
-}
-
-.who .text {
-  width: 70%;
-}
-
-.who .image {
-  width: 30%;
-}
-
-.who .image img {
-  width: 8rem;
-  border-radius: 50%;
-}
-
 
 section .container {
   display: flex;
@@ -205,6 +192,7 @@ section .container {
 .ready .container {
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .ready h3 {
@@ -276,7 +264,7 @@ footer .container {
     padding: 0;
   }
   .section {
-    padding: 2rem 1rem;
+    padding: 1rem;
     margin-bottom: 0;    
   }
   .about .container , .course .container, .ready .container {
@@ -304,6 +292,15 @@ footer .container {
   }
   .ready .sign-up {
     padding: 1rem;
+  }
+
+  .course-item .title h5 {
+    font-size: .7rem;
+  }
+
+  .course-item .content .description h4 {
+    font-size: .8rem;
+    line-height: 1rem;
   }
 }
 
